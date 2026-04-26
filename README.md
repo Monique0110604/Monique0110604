@@ -1,16 +1,20 @@
-## Hi there 👋
+## 👩‍💻 About Me
+
+I'm currently transitioning into the tech field, focusing on Python and software development.
+I'm building my skills through practice and real projects.
+
+## 🚀 What I'm learning
+- Python
+- Programming logic
+- Software development fundamentals
+
+## 🌍 Goals
+- Work with international projects
+- Become a Software Engineer
+- Specialize in Artificial Intelligence
+
+## 📌 Current focus
+Improving my skills daily and building a stron
 
 
-**Monique0110604/Monique0110604** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-  
