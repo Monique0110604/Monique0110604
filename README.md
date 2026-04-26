@@ -11,7 +11,7 @@ I'm building my skills through practice and real projects.
 ## 🌍 Goals
 - Work with international projects
 - Software Engineer | Global Tech & Business 
-- Specialize in Artificial Intelligence
+- All Specialist Artificial Intelligence
 
 ## 📌 Current focus
 Improving my skills daily and building a stron
