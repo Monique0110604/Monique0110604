@@ -1,0 +1,1474 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Monique0110604/Monique0110604/blob/main/if_e_else_elif_lista_exercicios.ipynb%20C%C3%93PIA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "illF2BD9my3c"
+      },
+      "source": [
+        "# Exercícios sobre If e Else\n",
+        "\n",
+        "Nesse notebook vamos resolver diversos exercícios que tem como objetivo principal mostrar o funcionamento do If e Else. Aqui não vamos utilizar nenhum conceito mais avançado de programação e você poderá resolver todos eles do seu jeito.\n",
+        "\n",
+        "Mas como assim do meu jeito?\n",
+        "\n",
+        "É verdade, cada exercício pode ser resolvido de uma forma muito particular, ou seja, seguir o raciocínio de cada pessoa. Portanto, apesar de colocarmos várias soluções aqui, você poderá criar sua própria versão da resolução e praticar.\n",
+        "\n",
+        "---\n",
+        "\n",
+        "## pré-requisito para resolver os exercícios\n",
+        "\n",
+        "Para resolver esses exercícios você precisará compreender no mínimo alguns conceitos da programação, são eles:\n",
+        "- Como declarar variáveis\n",
+        "- Como atribuir valores para variáveis\n",
+        "- Como funcionam os tipos de dados de cada variável (inteiro, string, etc)\n",
+        "- Como realizar o input de dados usando o teclado (input)\n",
+        "- Como realizar a saída de dados usando o terminal (print)\n",
+        "- O que são e como usar os conectores lógicos (and, or)\n",
+        "- Compreender o que são e como usar condicionais (IF e Else)\n",
+        "\n",
+        "Caso você não conheça algum desses assuntos, pare um pouco e dê uma revisada no conteúdo antes de prosseguir.\n",
+        "\n",
+        "---\n",
+        "\n",
+        "## Quantos exercicios eu preciso resolver?\n",
+        "\n",
+        "Isso é muito pessoal, cada um possui seu nível de \"saturação\". Deixe-me explicar isso melhor...\n",
+        "\n",
+        "Ao resolver esses exercícios, chega um determinado momento que eles se tornam quase todos muito semelhantes. Isso é previsível já que estamos explorando apenas um recurso da linguagem que é a decisão.\n",
+        "\n",
+        "P: Então, preciso resolver todos os exercícios?\n",
+        "R: Acredito que não... resolva os exercícios apenas até você mesmo se convencer que realmente compreendeu o assunto e que não há mais nada de novo sendo adicionado."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5uExuGjRmy3e"
+      },
+      "source": [
+        "---\n",
+        "\n",
+        "1- Faça um programa que peça dois números e imprima o maior deles\n",
+        "Dica: para realizar a inserção de dados pelo usuário utilize a função input(\"texto para o usuario\")\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1\n",
+        "a = int(input(\"Digite o primeiro número: \"))\n",
+        "b = int(input(\"Digite o segundo número:\"))\n",
+        "\n",
+        "if a > 2:\n",
+        "  print(a)\n",
+        "else:\n",
+        "  print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ldWJLtL08RNj",
+        "outputId": "f6ace05a-f94a-4a43-88a6-e37c37aaf567"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número: 3\n",
+            "Digite o segundo número:5\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QSDV8QJ8my3e"
+      },
+      "source": [
+        "2- Faça um programa que peça um valor e mostre na tela se o valor é positivo ou\n",
+        "negativo\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor= int(input(\"Digite um número: \"))\n",
+        "if valor > 0:\n",
+        "  print('(valor) é positivo')\n",
+        "else:\n",
+        "  print(\"(valor) é negativo\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "upfFHAaC9XTr",
+        "outputId": "28d66518-7255-46e6-d414-51a909a486d6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 5\n",
+            "(valor) é positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VG6DIp12my3f"
+      },
+      "source": [
+        "3- Faça um programa que verifique se uma letra digitada é “F” ou “M”. Conforme a letra escrever: F – Feminino, M- Masculino,\n",
+        "Sexo inválido.\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "letra= input(\"Digite F ou M: \")\n",
+        "\n",
+        "if letra == \"F\":\n",
+        "  print(\"Feminino\")\n",
+        "elif letra ==\"M\":\n",
+        "  print (\"Masculino\")\n",
+        "else:\n",
+        "  print('Sexo invalido')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m5IXdqkDBHyT",
+        "outputId": "bbbfc2e0-1d1b-43a9-bdff-0cbe6ac4737d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite F ou M: m\n",
+            "Sexo invalido\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hGbPcj7Smy3f"
+      },
+      "source": [
+        "4- Faça um programa que verifique se uma letra digitada é vogal ou consoante.\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "letra=input(\"Digite uma letra: \")\n",
+        "\n",
+        "if letra in \"aeiou\":\n",
+        "  print(\"Vogal\")\n",
+        "else:\n",
+        "  print(\"Consoante\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0lN2vhWmB1bB",
+        "outputId": "4cab98ec-f08a-4210-f199-a6b772f5a0e4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma letra: e\n",
+            "Vogal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fl2lKGcZmy3f"
+      },
+      "source": [
+        "5- Faça um programa para a leitura de duas notas parciais de um aluno.\n",
+        " - A mensagem “Aprovado”, se a média alcançada for maior ou igual a sete;\n",
+        " - A mensagem “Aprovado com Distinção”, se a média for igual a dez;\n",
+        " - A mensagem “Reprovado” se a média for menor de do que sete;\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1=float(input(\"Nota 1: \"))\n",
+        "n2=float(input(\"Nota 2: \"))\n",
+        "\n",
+        "media=(n1+n2)/2\n",
+        "\n",
+        "if media == 10:\n",
+        "  print(\"Aprovado com Distincao\")\n",
+        "elif media >=7:\n",
+        "  print(\"Aprovado\")\n",
+        "else:\n",
+        "  print(\"Reprovado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G2aBiyglCVE0",
+        "outputId": "e6069336-1a6b-446c-b72b-34280580ae40"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nota 1: 6\n",
+            "Nota 2: 7\n",
+            "Reprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Y2dGOzOKmy3f"
+      },
+      "source": [
+        "6- Faça um programa que leia três números e mostre o maior deles;\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "\n",
+        "if a >= b and a >= c:\n",
+        "  print (a)\n",
+        "elif b >= a and b >= c:\n",
+        "  print (b)\n",
+        "else:\n",
+        "  print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-aYfIMuMDe6A",
+        "outputId": "e8c1b7ee-be9b-4fc9-c0dc-b8d527057492"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n",
+            "6\n",
+            "9\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YcL1XBPMmy3f"
+      },
+      "source": [
+        "7- Faça um programa que leia três números e mostre o maior e o menor deles;\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "\n",
+        "if a <= b and a <= c:\n",
+        "  print (a)\n",
+        "elif b <= a and b <= c:\n",
+        "  print(b)\n",
+        "else:\n",
+        "  print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uWjnWmK4ELUe",
+        "outputId": "81dfd6ed-4b21-48c8-c658-d889a2aa7c9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "299\n",
+            "450\n",
+            "17\n",
+            "17\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VLOXOaj3my3g"
+      },
+      "source": [
+        "8- Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre o mais barato.\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "p1=float(input(\"Produto 1:\"))\n",
+        "p2=float(input(\"Produto 2:\"))\n",
+        "p3=float(input(\"Produto 3:\"))\n",
+        "\n",
+        "if p1 <= p2 and p1 <= p3:\n",
+        "  print(\"Compre o produto 1\")\n",
+        "elif p2 <= p1 and p2 <= p3:\n",
+        "  print(\"Compre o produto 2\")\n",
+        "else:\n",
+        "  print(\"Compre o produto 3\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tH_91z0TEx8p",
+        "outputId": "f2f32a0f-5490-4f19-fd30-53669d038e9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Produto 1:29\n",
+            "Produto 2:44\n",
+            "Produto 3:199\n",
+            "Compre o produto 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FBUWzO1Umy3g"
+      },
+      "source": [
+        "9- Faça um programa que leia três números e mostre-os em ordem decrescente.\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "\n",
+        "if a >= b and a >= c:\n",
+        "  if b >= c:\n",
+        "    print(a,b,c)\n",
+        "  else:\n",
+        "    print(a,c,b)\n",
+        "elif b >= a and b >= c:\n",
+        "   if a >= c:\n",
+        "    print(b,a,c)\n",
+        "   else:\n",
+        "    print(b,c,a)\n",
+        "else:\n",
+        "  if a >= b:\n",
+        "    print(c,a,b)\n",
+        "  else:\n",
+        "    print(c,b,a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h0gGozr8Gvwn",
+        "outputId": "09dee112-b35c-43ed-a779-e0c54c0d218f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "77\n",
+            "43\n",
+            "77 43 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "E1aitP_pmy3g"
+      },
+      "source": [
+        "10- Faça um programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-vespertino ou N-noturno.\n",
+        "Imprima a mensagem “Bom dia!” ou  “Boa Noite” ou “Valor inválido”, conforme o caso.\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "turno = input(\"Digite M, V ou N: \")\n",
+        "\n",
+        "if turno == \"M\":\n",
+        "  print(\"Bom dia!\")\n",
+        "elif turno == \"V\":\n",
+        "  print(\"Boa tarde!\")\n",
+        "elif turno == \"N\":\n",
+        "  print(\"Boa noite!\")\n",
+        "else:\n",
+        "  print(\"Valor invalido\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gLUlGcY-I8ew",
+        "outputId": "07c758f1-c9a5-4e26-dca5-943e2ef8e41c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite M, V ou N: M\n",
+            "Bom dia!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IRJLOEEomy3g"
+      },
+      "source": [
+        " 11- As organizações CSM resolveram dar um aumento de salário aos seus\n",
+        " colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes.\n",
+        " - Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual;\n",
+        " - Salários até RS 280,00 (incluindo): aumento de 20%;\n",
+        " - Salários entre RS 280,00 e RS 700,00: aumento de 15%;\n",
+        " - Salários entre RS 700,00 e RS 1500,00: aumento de 10%;\n",
+        " - Salários de RS 1500,00 em diante: aumento de 5% Após o aumento ser realizado;\n",
+        "\n",
+        "Informe na tela os seguintes dados;\n",
+        " - O salário antes do reajuste;\n",
+        " - O percentual de aumento aplicado;\n",
+        " - O valor do aumento;\n",
+        " - O novo salário, após o aumento.\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "salario = float(input(\"Salario: \"))\n",
+        "\n",
+        "if salario <= 280:\n",
+        "  aumento = salario * 0.20\n",
+        "  percentual = 20\n",
+        "elif salario <= 700:\n",
+        "  aumento = salario * 0.15\n",
+        "  percentual = 15\n",
+        "elif salario <= 1500:\n",
+        "  aumento = salario * 0.10\n",
+        "  percentual = 10\n",
+        "else:\n",
+        "    aumento = salario * 0.05\n",
+        "    percentual = 5\n",
+        "\n",
+        "novo =  salario + aumento\n",
+        "\n",
+        "print(\"Salario antes:\", salario)\n",
+        "print('Percentual:', percentual, \"%\")\n",
+        "print(\"Aumento:\", aumento)\n",
+        "print(\"Novo salario:\", novo)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ynfu3vz1KMkL",
+        "outputId": "26e231be-65db-4026-81d9-dd8b5088b4c3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Salario: 800\n",
+            "Salario antes: 800.0\n",
+            "Percentual: 10 %\n",
+            "Aumento: 80.0\n",
+            "Novo salario: 880.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xqY_IFSVmy3g"
+      },
+      "source": [
+        " 12- Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do salário bruto, mas não é descontado (é a empresa que deposita.) O salário líquido corresponde ao salário bruto menos os descontos O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.\n",
+        " - Desconto do IR;\n",
+        " - Salário Bruto ate RS900,00 (inclusive) – Isento;\n",
+        " - Salário Bruto de RS 1500, 00 (inclusive) – desconto de 5%;\n",
+        " - Salario bruto até RS 2500,00 (Inclusive) – desconto de 10%;\n",
+        " - Salário bruto acima de 2500 – Desconto de 20%.\n",
+        "\n",
+        "Imprima na tela as informações, dispostas conforme o exemplo abaixo, no exemplo valor da hora é 5 e a quantidade de horas é 220.\n",
+        "\n",
+        "```plaintext\n",
+        "Salário bruto (5 * 220)            : RS   1100,00\n",
+        " ( - ) IR (5%)                     : RS     55,00\n",
+        " ( - ) INSS ( 10% )                : RS    110,00\n",
+        " FGTS ( 11%)                       : RS    121,00\n",
+        " Total de descontos                : RS    165,00\n",
+        "Salário Líquido                    : RS    935,00\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor_hora = float(input(\"Valor da hora: \"))\n",
+        "horas = float(input(\"Horas trabalhadas: \"))\n",
+        "salario_bruto = valor_hora * horas\n",
+        "\n",
+        "# IR\n",
+        "if salario_bruto <= 900:\n",
+        "    ir = 0\n",
+        "    perc_ir = 0\n",
+        "elif salario_bruto <= 1500:\n",
+        "    ir = salario_bruto * 0.05\n",
+        "    perc_ir = 5\n",
+        "elif salario_bruto <= 2500:\n",
+        "    ir = salario_bruto * 0.10\n",
+        "    perc_ir = 10\n",
+        "else:\n",
+        "    ir = salario_bruto * 0.20\n",
+        "    perc_ir = 20\n",
+        "\n",
+        "inss = salario_bruto * 0.10\n",
+        "fgts = salario_bruto * 0.11  # não desconta\n",
+        "total_desc = ir + inss\n",
+        "salario_liquido = salario_bruto - total_desc\n",
+        "\n",
+        "print(\"Salário Bruto:\", salario_bruto)\n",
+        "print(\"IR (\", perc_ir, \"%):\", ir)\n",
+        "print(\"INSS (10%):\", inss)\n",
+        "print(\"FGTS (11%):\", fgts)\n",
+        "print(\"Total de descontos:\", total_desc)\n",
+        "print(\"Salário Líquido:\", salario_liquido)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d3IAO-e0MIO7",
+        "outputId": "382f4fb8-86a3-490a-948d-1332962814f7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Valor da hora: 5\n",
+            "Horas trabalhadas: 7\n",
+            "Salário Bruto: 35.0\n",
+            "IR ( 0 %): 0\n",
+            "INSS (10%): 3.5\n",
+            "FGTS (11%): 3.85\n",
+            "Total de descontos: 3.5\n",
+            "Salário Líquido: 31.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yZfj-piNmy3g"
+      },
+      "source": [
+        "13 – Faça um Programa que leia um número e exiba o dia correspondente da semana.\n",
+        " (1- Domingo , 2- Segunda, etc.) se digitar outro valor deve aparecer “valor inválido)\n",
+        "\n",
+        " ---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Digite um número (1 a 7): \"))\n",
+        "\n",
+        "if num == 1:\n",
+        "    print(\"Domingo\")\n",
+        "elif num == 2:\n",
+        "    print(\"Segunda\")\n",
+        "elif num == 3:\n",
+        "    print(\"Terça\")\n",
+        "elif num == 4:\n",
+        "    print(\"Quarta\")\n",
+        "elif num == 5:\n",
+        "    print(\"Quinta\")\n",
+        "elif num == 6:\n",
+        "    print(\"Sexta\")\n",
+        "elif num == 7:\n",
+        "    print(\"Sábado\")\n",
+        "else:\n",
+        "    print(\"Valor inválido\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "btjsS__NQmkE",
+        "outputId": "d1a49b8a-6d07-4b1b-e90b-2fbe5ac2fd17"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número (1 a 7): 6\n",
+            "Sexta\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mCn2TmM-my3g"
+      },
+      "source": [
+        " 14 – Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre,\n",
+        " e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo:\n",
+        "\n",
+        "```plaintext\n",
+        " Média de aproveitamento                  Conceito\n",
+        " Entre 9.0 e 10.0                            A\n",
+        " Entre 7.5 e 9.0                             B\n",
+        " Entre 6.0 e 7.5                             C\n",
+        " Entre 4.0 e 6.0                             D\n",
+        " Entre 4.0 e zero                            E\n",
+        "```\n",
+        "\n",
+        "O algoritmo deve mostrar na tela as notas, a média, o conceito correspondente e a mensagem “APROVADO” se o\n",
+        " conceito for A, B ou C “REPROVADO” se o conceito for D ou E.\n",
+        "\n",
+        " ---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = float(input(\"Nota 1: \"))\n",
+        "n2 = float(input(\"Nota 2: \"))\n",
+        "media = (n1 + n2) / 2\n",
+        "\n",
+        "if media >= 9:\n",
+        "    conceito = \"A\"\n",
+        "elif media >= 7.5:\n",
+        "    conceito = \"B\"\n",
+        "elif media >= 6:\n",
+        "    conceito = \"C\"\n",
+        "elif media >= 4:\n",
+        "    conceito = \"D\"\n",
+        "else:\n",
+        "    conceito = \"E\"\n",
+        "\n",
+        "print(\"Notas:\", n1, n2)\n",
+        "print(\"Média:\", media)\n",
+        "print(\"Conceito:\", conceito)\n",
+        "if conceito == \"A\" or conceito == \"B\" or conceito == \"C\":\n",
+        "    print(\"APROVADO\")\n",
+        "else:\n",
+        "    print(\"REPROVADO\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 228
+        },
+        "id": "WUOnh9bJQ--F",
+        "outputId": "65b5a8c6-7fb7-422e-d6c7-ab5a55120c4a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Nota 1: d\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "could not convert string to float: 'd'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_12784/1500013040.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mn1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Nota 1: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mn2\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Nota 2: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mmedia\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mn1\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mn2\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m/\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0mmedia\u001b[0m \u001b[0;34m>=\u001b[0m \u001b[0;36m9\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: could not convert string to float: 'd'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GbYQ4XD0my3g"
+      },
+      "source": [
+        " 15- Faça um programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.\n",
+        "\n",
+        " Dicas:\n",
+        " - Três lados formam um triangulo quando a soma de quaisquer dos  dois lados é menor que o terceiro.\n",
+        " - Triângulo Equilátero: três lados iguais;\n",
+        " - Triângulo isósceles: quaisquer dois lados iguais;\n",
+        " - Triângulo Escaleno: três lados diferentes;\n",
+        "\n",
+        " ---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input(\"Lado 1: \"))\n",
+        "b = float(input(\"Lado 2: \"))\n",
+        "c = float(input(\"Lado 3: \"))\n",
+        "\n",
+        "# verifica se é triângulo\n",
+        "\n",
+        "if a + b > c and a + c > b and b + c > a:\n",
+        "    if a == b and b == c:\n",
+        "        print(\"Triângulo Equilátero\")\n",
+        "    elif a == b or a == c or b == c:\n",
+        "        print(\"Triângulo Isósceles\")\n",
+        "    else:\n",
+        "        print(\"Triângulo Escaleno\")\n",
+        "else:\n",
+        "    print(\"Não forma triângulo\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZsZzbaNWRo3Q",
+        "outputId": "fa1a1ffd-14c0-4558-9bee-876efc000a8c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lado 1: 3\n",
+            "Lado 2: 3\n",
+            "Lado 3: 3\n",
+            "Triângulo Equilátero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RmUYs1l5my3g"
+      },
+      "source": [
+        "16- Faça um programa que calcule as raízes de uma equação do segundo grau, na forma\n",
+        "\n",
+        "ax2 + bx + c.\n",
+        "\n",
+        "O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:\n",
+        "\n",
+        " - Se o usuário informar o valor de A igual a zero. a equação não e do segundo grau e o programa não deve fazer\n",
+        " pedir os demais valores, sendo encerrado;\n",
+        " - Se o delta calculado for negativo, a equação não possui raízes reais. Informe ao usuário e encerre o programa;\n",
+        " - Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe ao usuário;\n",
+        " - Se o delta for positivo, a equação possui duas raízes reais; informe-as ao usuário;\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input(\"A: \"))\n",
+        "\n",
+        "if a == 0:\n",
+        "    print(\"Não é equação do 2º grau\")\n",
+        "else:\n",
+        "    b = float(input(\"B: \"))\n",
+        "    c = float(input(\"C: \"))\n",
+        "    delta = b*b - 4*a*c\n",
+        "    if delta < 0:\n",
+        "        print(\"Não possui raízes reais\")\n",
+        "    elif delta == 0:\n",
+        "        x = -b / (2*a)\n",
+        "        print(\"Uma raiz:\", x)\n",
+        "    else:\n",
+        "        x1 = (-b + delta**0.5) / (2*a)\n",
+        "        x2 = (-b - delta**0.5) / (2*a)\n",
+        "        print(\"Duas raízes:\", x1, \"e\", x2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M0HHsNnASGwS",
+        "outputId": "a2308556-9787-40c1-9d68-df3e2b090e0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A: 222\n",
+            "B: 222\n",
+            "C: 22\n",
+            "Duas raízes: -0.11154034842611915 e -0.888459651573881\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "j7Hbg6d4my3h"
+      },
+      "source": [
+        "17- Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano e ou não bissexto.\n",
+        "\n",
+        "[Acesse aqui mais informações sobre ano bissexto](https://escolakids.uol.com.br/matematica/calculo-do-ano-bissexto.htm)\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ano = int(input(\"Digite o ano: \"))\n",
+        "\n",
+        "if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):\n",
+        "    print(\"Ano bissexto\")\n",
+        "else:\n",
+        "    print(\"Não é bissexto\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gGfKg4gBSbR2",
+        "outputId": "76980feb-15af-4a8f-fe47-d5049eb2a7e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o ano: 2026\n",
+            "Não é bissexto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uTNWW_s-my3h"
+      },
+      "source": [
+        "18- Faça um Programa que peça um número inteiro e determine se ele e par ou ímpar.\n",
+        "Dica: utilize o operador módulo (resto da divisão).\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"Digite um número inteiro: \"))\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "    print(\"O número é par\")\n",
+        "else:\n",
+        "    print(\"O número é ímpar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-EsCqu1bS03O",
+        "outputId": "f3503490-d424-4eaa-b29a-3fb16d3b6a99"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 6\n",
+            "O número é par\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JLUmxmAtmy3h"
+      },
+      "source": [
+        "19- Faça um Programa que leia 1 número e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número e:\n",
+        "- Par ou ímpar;\n",
+        "- Positivo ou negativo;\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = float(input(\"Digite um número: \"))\n",
+        "\n",
+        "print(\"Escolha a operação:\")\n",
+        "print(\"1 - Par ou Ímpar\")\n",
+        "print(\"2 - Positivo ou Negativo\")\n",
+        "\n",
+        "opcao = int(input(\"Digite 1 ou 2: \"))\n",
+        "\n",
+        "if opcao == 1:\n",
+        "    if numero % 2 == 0:\n",
+        "        print(\"O número é par\")\n",
+        "    else:\n",
+        "        print(\"O número é ímpar\")\n",
+        "elif opcao == 2:\n",
+        "    if numero > 0:\n",
+        "        print(\"O número é positivo\")\n",
+        "    elif numero < 0:\n",
+        "        print(\"O número é negativo\")\n",
+        "    else:\n",
+        "        print(\"O número é zero\")\n",
+        "else:\n",
+        "    print(\"Opção inválida\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ffweRFJUS-el",
+        "outputId": "12f5ed2a-fb02-4c3d-8c93-8cc050e30b4a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 36325\n",
+            "Escolha a operação:\n",
+            "1 - Par ou Ímpar\n",
+            "2 - Positivo ou Negativo\n",
+            "Digite 1 ou 2: 2\n",
+            "O número é positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8qY8_7Dkmy3h"
+      },
+      "source": [
+        " 20- Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:\n",
+        " - \"Telefonou para a vítima?\"\n",
+        " - \"Esteve no local do crime?\"\n",
+        " - \"Mora perto da vítima?\"\n",
+        " - \"Devia para a vítima?\"\n",
+        " - \"Já trabalhou com a vítima?\"\n",
+        "\n",
+        "O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.\n",
+        "Se a pessoa responder positivamente a 2 questões ela deve ser classificada como \"Suspeita\",\n",
+        "entre 3 e 4 como \"Cúmplice\" e 5 como “Assassino“. Caso contrário, ele será classificado como \"Inocente“.\n",
+        "\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "40gEVP6Zmy3h"
+      },
+      "source": [
+        "21- Faça um programa que peça dois números ao usuário e mostre qual o maior e qual o menor\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input(\"Digite o primeiro número: \"))\n",
+        "b = float(input(\"Digite o segundo número: \"))\n",
+        "\n",
+        "if a > b:\n",
+        "    print(\"Maior:\", a)\n",
+        "    print(\"Menor:\", b)\n",
+        "else:\n",
+        "    print(\"Maior:\", b)\n",
+        "    print(\"Menor:\", a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nkxPujSFTQDw",
+        "outputId": "74751db4-668e-4cc5-eff6-e1af9b346911"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número: 3736\n",
+            "Digite o segundo número: 2376\n",
+            "Maior: 3736.0\n",
+            "Menor: 2376.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Zr6jmuKJmy3h"
+      },
+      "source": [
+        "22- Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor.\n",
+        "\n",
+        "DESAFIO: você consegue criar mais de uma solução?\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Digite o primeiro número: \"))\n",
+        "b = int(input(\"Digite o segundo número: \"))\n",
+        "c = int(input(\"Digite o terceiro número: \"))\n",
+        "\n",
+        "maior = max(a, b, c)\n",
+        "menor = min(a, b, c)\n",
+        "\n",
+        "print(\"Maior:\", maior)\n",
+        "print(\"Menor:\", menor)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I2h883wxTWh_",
+        "outputId": "2036e951-cd90-4df1-9cf6-f3a98c8db79e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número: 5934\n",
+            "Digite o segundo número: 2376\n",
+            "Digite o terceiro número: 7647\n",
+            "Maior: 7647\n",
+            "Menor: 2376\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "K4gmUHElmy3h"
+      },
+      "source": [
+        "23- Escreva um programa em C que recebe um inteiro e diga se é par ou ímpar.\n",
+        "\n",
+        "Dica: Use o operador matemático % (resto da divisão ou módulo) e o teste condicional if.\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "int main() {\n",
+        "    int numero;\n",
+        "\n",
+        "    printf(\"Digite um numero: \");\n",
+        "    scanf(\"%d\", &numero);\n",
+        "\n",
+        "    if (numero % 2 == 0) {\n",
+        "        printf(\"Par\\n\");\n",
+        "    } else {\n",
+        "        printf(\"Impar\\n\");}\n",
+        "\n",
+        "    return 0;}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "iNFpUgvATpav",
+        "outputId": "4a0e05a6-7f39-4683-b9df-02c158a22849"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (1849284419.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_12784/1849284419.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    int main() {\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "h7e5TPmxmy3h"
+      },
+      "source": [
+        "24- Escreva um programa que pergunte o raio de uma circunferência, e sem seguida mostre o diâmetro, comprimento e área da circunferência\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "raio = float(input(\"Digite o raio: \"))\n",
+        "\n",
+        "diametro = 2 * raio\n",
+        "comprimento = 2 * 3.14 * raio\n",
+        "area = 3.14 * raio ** 2\n",
+        "\n",
+        "print(\"Diâmetro:\", diametro)\n",
+        "print(\"Comprimento:\", comprimento)\n",
+        "print(\"Área:\", area)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rBwo4fMUTyi5",
+        "outputId": "b6e77e3f-dc26-4a09-acb2-87443eb129be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o raio: 3\n",
+            "Diâmetro: 6.0\n",
+            "Comprimento: 18.84\n",
+            "Área: 28.26\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "E3nM1igFmy3h"
+      },
+      "source": [
+        "25- Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não. Use alguns dos operadores lógicos OU (||) e E (&&).\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "\n",
+        "if idade >= 18 and idade <= 67:\n",
+        "    print(\"Pode doar sangue\")\n",
+        "else:\n",
+        "    print(\"Não pode doar sangue\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PQmlPReST9hT",
+        "outputId": "f47f3496-63f4-4b47-f0c7-f2accc56db43"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 23\n",
+            "Pode doar sangue\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cy4t7f7Xmy3h"
+      },
+      "source": [
+        "26- Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é\n",
+        "válida ou não. Caso não seja, diga o motivo. Suponha que todos os meses tem 31 dias e que estejamos no ano de 2013.\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dia = int(input(\"Dia: \"))\n",
+        "mes = int(input(\"Mês: \"))\n",
+        "ano = int(input(\"Ano: \"))\n",
+        "\n",
+        "if ano != 2013:\n",
+        "    print(\"Ano inválido (deve ser 2013)\")\n",
+        "elif mes < 1 or mes > 12:\n",
+        "    print(\"Mês inválido\")\n",
+        "elif dia < 1 or dia > 31:\n",
+        "    print(\"Dia inválido\")\n",
+        "else:\n",
+        "    print(\"Data válida\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jVwjS90jUDDz",
+        "outputId": "2dc965d9-ea51-44e0-a7bb-ad5755579b59"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dia: 04\n",
+            "Mês: 07\n",
+            "Ano: 2013\n",
+            "Data válida\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "opmiLN5ymy3h"
+      },
+      "source": [
+        "27- Crie um programa que peça um número ao usuário e armazene ele na variável x. Depois peça outro número e armazene na variável y. Mostre esses números. Em seguida, faça com que x passe a ter o valor de y, e que y passe a ter o valor de x.\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = int(input(\"Digite o valor de x: \"))\n",
+        "y = int(input(\"Digite o valor de y: \"))\n",
+        "\n",
+        "print(\"Antes da troca:\")\n",
+        "print(\"x =\", x)\n",
+        "print(\"y =\", y)\n",
+        "\n",
+        "# troca dos valores\n",
+        "temp = x\n",
+        "x = y\n",
+        "y = temp\n",
+        "\n",
+        "print(\"Depois da troca:\")\n",
+        "print(\"x =\", x)\n",
+        "print(\"y =\", y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wfwz-nmzUIY_",
+        "outputId": "219dc311-be98-4397-c5ab-88d2b49951c2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor de x: 9\n",
+            "Digite o valor de y: 6\n",
+            "Antes da troca:\n",
+            "x = 9\n",
+            "y = 6\n",
+            "Depois da troca:\n",
+            "x = 6\n",
+            "y = 9\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8.5"
+    },
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
